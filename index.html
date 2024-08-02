@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="top">
+        <div class="sr"><p>Sr.no.<span id="sr">0000000</span></p></div>
+        <div class="logo"><img style="width: 100px;height: 100px;" src="asset/hicet logo.jpg"></div>
+        <div class="scan"><img style="width: 100px;height: 100px;" src="asset/scanner.png"></div>
+    </div>
+    <div class="head">
+    <h2>Hindusthan college of Engineering and Technology</h2>
+    <h4>An Autonomous Institution</h4>
+    <h3>Annual Statement of Marks</h3>
+    </div>
+    <div class="sec">
+        <div class="name">
+            <p>Name of the Candidate</p>
+            <b>NIROOPA R P</b>
+        </div>
+        <div class="course">
+            <p>Course name with code</p>
+            <b>B.TECH.INFORMATION TECHNOLOGY</b>
+        </div>
+    </div>
+    <div class="third">
+        <div class="no">
+            <div class="reg"><p>Reg.No.</p><b>720721110024</b></div>
+            <div class="enr"><p>Enrollment No.</p><b>1234567890</b></div>
+        </div>
+        <div class="centre">
+            <p>Authourised Training centre Name</p>
+            <b>Sixphrase Institutional Trainering centre</b>
+        </div>
+    </div>
+    <div class="marks">
+        <table>
+            <tr>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Max Marks</th>
+                <th colspan="3">Marks Obtained in Figures</th>
+                <th>Total in Words</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Theory</th>
+                <th>Practical</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>DFSO12-101</td>
+                <td>Fire Science and Technology</td>
+                <td>100</td>
+                <td><input type="number" class="theory" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><input type="number" class="practical" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-102</td>
+                <td>Fire Protection and Survey</td>
+                <td>100</td>
+                <td><input type="number" class="theory" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><input type="number" class="practical" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-103</td>
+                <td>Fire Prevention and Technology</td>
+                <td>100</td>
+                <td><input type="number" class="theory" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><input type="number" class="practical" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-104</td>
+                <td>Fire Extinction and Control</td>
+                <td>100</td>
+                <td><input type="number" class="theory" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><input type="number" class="practical" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-105</td>
+                <td>Industrial Safety and Management</td>
+                <td>100</td>
+                <td><input type="number" class="theory" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><input type="number" class="practical" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-106</td>
+                <td>Practical I</td>
+                <td>100</td>
+                <td><input type="number" class="theory" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><input type="number" class="practical" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-107</td>
+                <td>Practical II</td>
+                <td>100</td>
+                <td><input type="number" class="theory" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><input type="number" class="practical" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-108</td>
+                <td>Practical III</td>
+                <td>100</td>
+                <td><input type="number" class="theory" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><input type="number" class="practical" oninput="calculateTotal(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="total"></div>
+    <p>Grand total : 000</p>
+    <p>In words    : Zero Hundred Zero Zero</p>
+   
+   <div class="final">
+    <table class="final">
+        <tr>
+            <th>Month and Year of Exam</th>
+            <th>No.of Subject Offered</th>
+            <th>Result</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>May 2020</td>
+            <td>T5+P3=8</td>
+            <td>Pass</td>
+            <td>0.00%</td>
+            <td>(Grade)</td>
+        </tr>
+    </table>
+    </div>
+    <div class="footer">
+        <div class="datediv">
+         <h4>Date: <span class="date">01/08/24</span></h4>
+        </div>
+        <div class="sealdiv">
+          <p>This sample of Annual Statement Of Marks is Prepared as per
+              Skill Development Management Initiative, Under Ministry of
+              Skill Development and Entrepreneaurship, Government of India 
+          </p>
+        </div>
+        <div class="signaturediv">
+          <h4>(Signature of Deputy Controller Of Examination)<br>
+              Deputy Controller Of Examination</h4>
+        </div>
+    </div>
+    <p style="text-align: center;color: brown;">Students Marked with * indicates Exemption</p>
+</div>
+  
+   
+   </body>
+</html>
